@@ -16,6 +16,13 @@ model Contact {
   id          Int      @id @default(autoincrement())
   firstName   String
   lastName    String
+  phone       String
+  email       String
+  company     String
+  linkedIn    String
+  city        String
+  state       String
+  lastContacted String
   jobs        Job[]
 }
 
@@ -23,6 +30,9 @@ model Job {
   id          Int      @id @default(autoincrement())
   title       String
   description String
+  industry    String
+  type        String
+  travelRequired Boolean
   contact     Contact @relation(fields: [contactId], references: [id])
   contactId   Int
 }

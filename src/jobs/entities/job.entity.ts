@@ -1,8 +1,7 @@
 // src/articles/entities/article.entity.ts
 
-import { Job } from '@prisma/client';
+import { Job, Technology } from '@prisma/client';
 import { ApiProperty } from '@nestjs/swagger';
-import { Technology } from '@prisma/client';
 
 /* Displays example schema for Swagger */
 

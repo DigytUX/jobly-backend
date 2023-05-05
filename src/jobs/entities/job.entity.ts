@@ -4,6 +4,10 @@ import { Job } from '@prisma/client';
 import { ApiProperty } from '@nestjs/swagger';
 import { Contact, Technology } from '@prisma/client';
 
+/* 
+Displays example schema for Swagger 
+*/
+
 export class JobEntity implements Job {
   @ApiProperty()
   id: number
@@ -22,9 +26,6 @@ export class JobEntity implements Job {
 
   @ApiProperty()
   travelRequired: boolean;
-
-  @ApiProperty()
-  contact: Contact;
 
   @ApiProperty()
   contactId: number | null;

@@ -12,17 +12,17 @@ datasource db {
 
 // prisma/schema.prisma
 
-model Job {
-  id          Int      @id @default(autoincrement())
-  title       String
-  description String
-  contact     Contact? @relation(fields: [contactId], references: [id])
-  contactId   Int?
-}
-
 model Contact {
   id          Int      @id @default(autoincrement())
   firstName   String
   lastName    String
   jobs        Job[]
+}
+
+model Job {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  contact     Contact @relation(fields: [contactId], references: [id])
+  contactId   Int
 }

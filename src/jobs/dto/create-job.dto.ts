@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Technology } from '@prisma/client';
+import { Contact, Technology } from '@prisma/client';
 
 export class CreateJobDto {
   @ApiProperty()

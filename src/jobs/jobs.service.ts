@@ -24,6 +24,5 @@ export class JobsService {
   }
 
   remove(id: number) {
-    return this.prisma.job.delete({ where: { id } });
-  }
+    return this.prisma.job.delete({ where: { id } });  }
 }

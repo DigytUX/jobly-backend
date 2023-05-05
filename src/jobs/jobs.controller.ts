@@ -12,7 +12,7 @@ export class JobsController {
 
   @Post()
   @ApiCreatedResponse({ type: JobEntity })
-  create(@Body() createJobDto: CreateJobDto) {
+  create(createJobDto: CreateJobDto) {
     return this.jobsService.create(createJobDto);
   }
 

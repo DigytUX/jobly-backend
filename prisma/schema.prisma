@@ -33,7 +33,8 @@ model Job {
   industry    String
   type        String
   travelRequired Boolean
-  contact     Int?
+  contact     Contact? @relation(fields: [contactId], references: [id])
+  contactId   Int?
   techstack   Technology[]
   salary Int @default(0)
 }

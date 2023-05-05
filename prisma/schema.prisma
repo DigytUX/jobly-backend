@@ -36,6 +36,7 @@ model Job {
   contact     Contact @relation(fields: [contactId], references: [id])
   contactId   Int
   techstack   Technology[]
+  salary Int @default(0)
 }
 
 model Technology {

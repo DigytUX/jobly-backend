@@ -18,10 +18,10 @@ export class CreateJobDto {
   travelRequired: boolean;
 
   @ApiProperty()
-  contact: Contact;
+  contact?: Contact;
 
   @ApiProperty()
-  contactId: number;
+  contactId?: number | null;
 
   @ApiProperty()
   techstack: Technology;

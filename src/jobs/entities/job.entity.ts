@@ -27,7 +27,7 @@ export class JobEntity implements Job {
   contact: Contact;
 
   @ApiProperty()
-  contactId: number;
+  contactId: number | null;
 
   @ApiProperty()
   techstack: Technology;

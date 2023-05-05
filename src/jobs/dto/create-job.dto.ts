@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Contact, Technology } from '@prisma/client';
+import { Technology } from '@prisma/client';
 
 export class CreateJobDto {
   @ApiProperty()
@@ -16,9 +16,6 @@ export class CreateJobDto {
 
   @ApiProperty()
   travelRequired: boolean;
-
-  @ApiProperty()
-  contact: Contact;
 
   @ApiProperty()
   contactId: number;

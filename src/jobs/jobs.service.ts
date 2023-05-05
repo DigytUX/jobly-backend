@@ -16,7 +16,7 @@ export class JobsService {
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} job`;
+    return this.prisma.job.findUnique({where : {id}})
   }
 
   update(id: number, updateJobDto: UpdateJobDto) {

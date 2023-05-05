@@ -7,7 +7,6 @@ import { Technology } from '@prisma/client';
 /* Displays example schema for Swagger */
 
 export class JobEntity implements Job {
-  @ApiProperty()
   id: number
   
   @ApiProperty()

@@ -6,13 +6,13 @@ export class CreateJobDto {
   title: string;
 
   @ApiProperty()
-  description?: string;
+  description: string;
 
   @ApiProperty()
-  industry?: string;
+  industry: string;
 
   @ApiProperty()
-  type?: string;
+  type: string;
 
   @ApiProperty()
   travelRequired: boolean;

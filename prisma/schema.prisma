@@ -14,7 +14,7 @@ datasource db {
 
 model Contact {
   id          Int      @id @default(autoincrement())
-  firstName   String
+  firstName   String 
   lastName    String
   phone       String
   email       String

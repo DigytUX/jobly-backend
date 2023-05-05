@@ -35,4 +35,12 @@ model Job {
   travelRequired Boolean
   contact     Contact @relation(fields: [contactId], references: [id])
   contactId   Int
+  techstack   Technology[]
+}
+
+model Technology {
+  id          Int      @id @default(autoincrement())
+  title String
+  job     Job @relation(fields: [jobId], references: [id])
+  jobId Int
 }

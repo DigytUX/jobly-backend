@@ -28,4 +28,7 @@ export class CreateJobDto {
 
   @ApiProperty()
   salary: number;
+
+  @ApiProperty()
+  createdAt: Date;
 }

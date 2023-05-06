@@ -37,6 +37,7 @@ model Job {
   contactId   Int?
   techstack   Technology[]
   salary Int @default(0)
+  createdAt   DateTime @default(now())
 }
 
 model Technology {

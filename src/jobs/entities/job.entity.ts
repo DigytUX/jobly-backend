@@ -31,4 +31,6 @@ export class JobEntity implements Job {
 
   @ApiProperty()
   salary: number;
+
+  createdAt: Date;
 }

@@ -1,26 +1,29 @@
 import { Injectable } from '@nestjs/common';
 import { CreateTechnologyDto } from './dto/create-technology.dto';
 import { UpdateTechnologyDto } from './dto/update-technology.dto';
+import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class TechnologiesService {
+  constructor(private prisma: PrismaService) {}
+
   create(createTechnologyDto: CreateTechnologyDto) {
-    return 'This action adds a new technology';
+    return this.prisma.technology.create({ data: createTechnologyDto as any }); // fix this error and find out why is not accepting thie type #001
   }
 
   findAll() {
-    return `This action returns all technologies`;
+    return this.prisma.technology.findMany()
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} technology`;
+    return this.prisma.technology.findUnique({where : {id}})
   }
 
   update(id: number, updateTechnologyDto: UpdateTechnologyDto) {
-    return `This action updates a #${id} technology`;
+    return this.prisma.technology.update({data: updateTechnologyDto as any, where: {id}}); // fix this error and find out why is not accepting thie type #001
   }
 
   remove(id: number) {
-    return `This action removes a #${id} technology`;
+    return this.prisma.technology.delete({ where: { id } });  
   }
 }

@@ -17,7 +17,6 @@ export class CreateJobDto {
   @ApiProperty()
   travelRequired: boolean;
 
-  @ApiProperty()
   contact?: Contact;
 
   @ApiProperty()

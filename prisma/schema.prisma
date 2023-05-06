@@ -41,7 +41,7 @@ model Job {
 
 model Technology {
   id          Int      @id @default(autoincrement())
-  title String
+  title String  @unique
   job     Job? @relation(fields: [jobId], references: [id])
   jobId Int?
 }

@@ -31,4 +31,7 @@ export class CreateJobDto {
 
   @ApiProperty()
   createdAt: Date;
+
+  @ApiProperty()
+  userId: string;
 }

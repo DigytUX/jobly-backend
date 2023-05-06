@@ -33,4 +33,6 @@ export class JobEntity implements Job {
   salary: number;
 
   createdAt: Date;
+
+  userId: string;
 }

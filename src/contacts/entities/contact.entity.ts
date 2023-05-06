@@ -28,9 +28,14 @@ export class ContactEntity implements Contact {
   @ApiProperty()
   state: string;
 
-  @ApiProperty()
-  lastContacted: string;
 
   @ApiProperty()
   jobs: Job;
+
+  createdAt: Date;
+
+  @ApiProperty()
+  lastContacted: string;
+
+  userId: string;
 }

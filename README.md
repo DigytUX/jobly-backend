@@ -26,6 +26,19 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+
+## Definitions 
+### Data Transfer Objects
+
+In Prisma, a Data Transfer Object (DTO) is a plain JavaScript object that represents data 
+that is passed between different layers of an application. The purpose of a DTO is to encapsulate 
+data and provide a clear and consistent interface for communication between different parts of 
+the application.
+
+### Entites
+Refers to a database table that is modeled using the Prisma schema language. This will also be read by Swagger to define the example data structure.
+
+
 ## Installation
 
 ```bash
@@ -71,3 +84,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+

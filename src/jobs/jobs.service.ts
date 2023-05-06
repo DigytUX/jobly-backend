@@ -8,7 +8,7 @@ export class JobsService {
   constructor(private prisma: PrismaService) {}
 
   create(createJobDto: CreateJobDto) {
-    return this.prisma.job.create({ data: createJobDto as any }); // fix this error and find out why is not accepting thie type #001
+    return this.prisma.job.create({ data: createJobDto as any  }); // fix this error and find out why is not accepting thie type #001
   }
 
   findAll() {

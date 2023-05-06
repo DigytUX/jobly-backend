@@ -22,8 +22,10 @@ model Contact {
   linkedIn    String
   city        String
   state       String
-  lastContacted String
   jobs        Job[]
+  createdAt   DateTime
+  lastContacted String
+  userId      String
 }
 
 model Job {
@@ -37,7 +39,8 @@ model Job {
   contactId   Int?
   techstack   Technology[]
   salary Int @default(0)
-  createdAt   DateTime @default(now())
+  createdAt   DateTime
+  userId      String
 }
 
 model Technology {

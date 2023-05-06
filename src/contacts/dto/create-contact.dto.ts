@@ -29,4 +29,5 @@ export class CreateContactDto {
   @ApiProperty()
   lastContacted: string;
 
+  userId: string;
 }

@@ -32,7 +32,7 @@ export class ContactEntity implements Contact {
   @ApiProperty()
   jobs: Job;
 
-  createdAt: Date;
+  createdAt: number;
 
   @ApiProperty()
   lastContacted: string;

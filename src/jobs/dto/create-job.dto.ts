@@ -26,7 +26,7 @@ export class CreateJobDto {
   techstack: Technology;
 
   @ApiProperty()
-  salary: number;
+  salary: string;
 
   @ApiProperty()
   createdAt: string;

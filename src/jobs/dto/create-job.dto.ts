@@ -29,7 +29,7 @@ export class CreateJobDto {
   salary: number;
 
   @ApiProperty()
-  createdAt: number;
+  createdAt: string;
 
   @ApiProperty()
   userId: string;

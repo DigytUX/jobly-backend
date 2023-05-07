@@ -28,11 +28,10 @@ export class ContactEntity implements Contact {
   @ApiProperty()
   state: string;
 
-
   @ApiProperty()
   jobs: Job;
 
-  createdAt: number;
+  createdAt: string;
 
   @ApiProperty()
   lastContacted: string;

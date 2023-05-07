@@ -30,10 +30,10 @@ export class JobEntity implements Job {
   techstack: Technology;
 
   @ApiProperty()
-  salary: number;
+  salary: string;
 
   @ApiProperty()
-  createdAt: number;
+  createdAt: string;
   
   @ApiProperty()
   userId: string;

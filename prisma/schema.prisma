@@ -33,6 +33,7 @@ model Job {
   title       String
   description String
   link        String
+  status      String
   company     String
   industry    String
   type        String

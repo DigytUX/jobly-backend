@@ -6,6 +6,6 @@
 
 */
 -- AlterTable
-ALTER TABLE "Job" ADD COLUMN     "company" TEXT NOT NULL,
-ADD COLUMN     "status" TEXT NOT NULL,
+ALTER TABLE "Job" ADD COLUMN     "company" TEXT NOT NULL DEFAULT '',
+ADD COLUMN     "status" TEXT NOT NULL DEFAULT '',
 ALTER COLUMN "link" DROP DEFAULT;

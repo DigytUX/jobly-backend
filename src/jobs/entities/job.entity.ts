@@ -18,6 +18,12 @@ export class JobEntity implements Job {
   link: string;
 
   @ApiProperty()
+  status: string;
+
+  @ApiProperty()
+  company: string;
+
+  @ApiProperty()
   industry: string;
 
   @ApiProperty()

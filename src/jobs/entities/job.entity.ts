@@ -17,8 +17,8 @@ export class JobEntity implements Job {
   @ApiProperty()
   link: string;
 
-  @ApiProperty()
-  status: string;
+  // @ApiProperty()
+  // status: string;
 
   @ApiProperty()
   company: string;

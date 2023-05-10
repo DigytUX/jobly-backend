@@ -32,6 +32,7 @@ model Job {
   id          Int      @id @default(autoincrement())
   title       String
   description String
+  link        String
   industry    String
   type        String
   travelRequired Boolean

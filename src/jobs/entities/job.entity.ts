@@ -15,6 +15,9 @@ export class JobEntity implements Job {
   description: string;
 
   @ApiProperty()
+  link: string;
+
+  @ApiProperty()
   industry: string;
 
   @ApiProperty()

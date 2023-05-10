@@ -9,4 +9,5 @@ import { PrismaModule } from 'src/prisma/prisma.module';
   imports: [PrismaModule]
 
 })
+
 export class JobsModule {}

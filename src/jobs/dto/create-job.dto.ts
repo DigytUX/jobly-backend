@@ -11,8 +11,8 @@ export class CreateJobDto {
   @ApiProperty()
   link: string;
 
-  // @ApiProperty()
-  // status: string;
+  @ApiProperty()
+  status: string;
 
   @ApiProperty()
   company: string;

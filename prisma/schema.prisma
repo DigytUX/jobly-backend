@@ -19,6 +19,7 @@ model User {
   phone       String
   email       String
   userId      String
+  resume      String
 }
 
 model Contact {

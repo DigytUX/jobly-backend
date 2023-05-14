@@ -22,4 +22,7 @@ export class UserEntity implements User {
   
   @ApiProperty()
   userId: string;
+
+  @ApiProperty()
+  resume: string;
 }

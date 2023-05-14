@@ -38,9 +38,6 @@ export class CreateJobDto {
   salary: string;
 
   @ApiProperty()
-  resume: string;
-
-  @ApiProperty()
   createdAt: string;
 
   @ApiProperty()

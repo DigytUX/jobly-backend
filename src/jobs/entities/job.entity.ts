@@ -42,9 +42,6 @@ export class JobEntity implements Job {
   salary: string;
 
   @ApiProperty()
-  resume: string;
-
-  @ApiProperty()
   createdAt: string;
   
   @ApiProperty()

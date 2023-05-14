@@ -52,6 +52,7 @@ model Job {
   contactId   Int?
   techstack   Technology[]
   salary      String 
+  resume      String
   createdAt   String
   userId      String
 }

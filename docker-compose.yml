@@ -2,17 +2,19 @@
 
 version: '3.8'
 services:
-
-  postgres:
-    image: postgres:13.5
-    restart: always
-    environment:
-      - POSTGRES_USER=myuser
-      - POSTGRES_PASSWORD=mypassword
-    volumes:
-      - postgres:/var/lib/postgresql/data
+  app: 
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - '5432:5432'
+      - 3000:3000
+    environment:
+      - DATABASE_URL=postgresql://postgres:lNiMwWazYVb6aM5t7Zrv@containers-us-west-150.railway.app:5772/railway
+      - PORT=3000
+      - PRISMA_QUERY_ENGINE_BINARY=debian-openssl-1.1.x
 
-volumes:
-  postgres:
+  web:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules # prevents overwriting
